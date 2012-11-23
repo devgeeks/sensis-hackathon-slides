@@ -1,0 +1,998 @@
+<!doctype html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <title>
+            reveal.js - The HTML Presentation Framework
+        </title>
+        <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+        <meta name="author" content="Hakim El Hattab">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"
+        />
+        <link rel="stylesheet" href="css/reveal.min.css">
+        <link rel="stylesheet" href="css/theme/default.css" id="theme">
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+        <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+        <script>
+                document.write('<link rel="stylesheet" href="css/print/' + (window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper') + '.css" type="text/css" media="print">');
+        </script>
+        <!--[if lt IE 9]>
+            <script src="lib/js/html5shiv.js">
+                                    
+            </script>
+        <![endif]-->
+    </head>
+    
+    <body>
+        <div class="reveal">
+            <!-- Any section element inside of this container is displayed as a slide
+            -->
+            <div class="slides">
+                <section>
+                    <section>
+                        <h1>
+                            Intro to
+                            <font color="#00ccff">
+                                PhoneGap
+                            </font>
+                        </h1>
+                        <h2>
+                            and
+                            <font color="#00ccff">
+                                PhoneGap Build
+                            </font>
+                        </h2>
+                        <div>
+                            <img src="images/Phonegap-Logo.png" style="background-color: rgb(204,204,204);"
+                            width="300">
+                            <font color="#00ccff">
+                                <br>
+                            </font>
+                        </div>
+                    </section>
+                    <section>
+                        <h1>
+                            Who
+                            <font color="#00ccff">
+                                Am
+                            </font>
+                            I?
+                        </h1>
+                        <div>
+                            <div style="">
+                                Tommy-Carlos Williams
+                            </div>
+                            <div style="">
+                                <br>
+                            </div>
+                            <div style="">
+                                <a href="mailto:tommy@devgeeks.org">tommy@devgeeks.org</a>
+                                &nbsp;*
+                            </div>
+                            <div style="">
+                                <br>
+                            </div>
+                            <div style="">
+                                <a href="http://twitter.com/theRealDevgeeks">@theRealDevgeeks</a>
+                            </div>
+                            <div style="">
+                                <br>
+                            </div>
+                            <div style="">
+                                <a href="http://blog.devgeeks.org ">http://blog.devgeeks.org</a>
+                            </div>
+                        </div>
+                        <div style="">
+                            <a href="http://github.com/devgeeks">http://github.com/devgeeks</a>
+                        </div>
+                        <div style="">
+                            <br>
+                        </div>
+                        <div style="font-size: 50.0%;line-height: 20.0px;">
+                            * No, I don't work for Adobe. I just love PhoneGap.
+                        </div>
+                    </section>
+                </section>
+                <section>
+                    <h1>
+                        What is
+                        <font color="#00ccff">
+                            PhoneGap
+                        </font>
+                        ?
+                    </h1>
+                    <div>
+                        ...when it's at home
+                    </div>
+                    <div>
+                        <br>
+                    </div>
+                    <div>
+                        <img src="images/PhoneGap-Lab-New.png" style="background-color: rgb(204,204,204);"
+                        width="750">
+                        &nbsp;
+                        <br>
+                    </div>
+                </section>
+                <section>
+                    <h1>
+                        <font color="#00ccff">
+                            Summary
+                        </font>
+                    </h1>
+                    PhoneGap is a tool used to create native mobile applications using Web
+                    technologies.&nbsp;
+                    <div>
+                        <br>
+                    </div>
+                    <div>
+                        PhoneGap provides a standard set of JavaScript APIs to access device features
+                        on all supported platforms.
+                        <br>
+                        <div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2>
+                        the web tools you love
+                    </h2>
+                    <h1>
+                        <font color="#00ccff">
+                            Open Source
+                        </font>
+                    </h1>
+                    <h1>
+                        Extensible
+                    </h1>
+                    <div>
+                        <h2>
+                            DEPLOY TO MULTIPLE PLATFORMS
+                        </h2>
+                    </div>
+                </section>
+                <section>
+                    <h1>
+                        Like a
+                        <font color="#00ccff">
+                            chrome-less browser
+                        </font>
+                    </h1>
+                    <div>
+                        <font color="#00ccff">
+                            <br>
+                        </font>
+                    </div>
+                    <div>
+                        <p>
+                            The UI layer of a PhoneGap application is a browser view that takes up
+                            100% of the device width and height. PhoneGap then provides a "
+                            <font color="#00ccff">
+                                bridge
+                            </font>
+                            " between native APIs and JavaScript
+                        </p>
+                        <p>
+                            <br>
+                        </p>
+                    </div>
+                </section>
+                <section>
+                    <h2>
+                        <img src="images/web-view_updated.png">
+                        <br>
+                    </h2>
+                </section>
+                <section>
+                    <h1>
+                        <font color="#00ccff">
+                            Cordova
+                        </font>
+                        &nbsp;vs&nbsp;
+                    </h1>
+                    <h1>
+                        <font color="#00ccff">
+                            PhoneGap
+                        </font>
+                    </h1>
+                    <div>
+                        <font color="#00ccff">
+                            <br>
+                        </font>
+                    </div>
+                    <div>
+                        Think of PhoneGap as a distribution of Cordova...
+                    </div>
+                    <div>
+                        PhoneGap is to Cordova as Chrome is to Webkit *
+                    </div>
+                    <div style="font-size: 50.0%;line-height: 20.0px;">
+                        <br>
+                    </div>
+                    <div style="font-size: 50.0%;line-height: 20.0px;">
+                        <br>
+                    </div>
+                    <div style="font-size: 50.0%;line-height: 20.0px;">
+                        <br>
+                    </div>
+                    <div style="font-size: 50.0%;line-height: 20.0px;">
+                        <br>
+                    </div>
+                    <div style="font-size: 50.0%;line-height: 20.0px;">
+                        * OK, it's not a perfect analogy... as RedHat is to Linux?
+                    </div>
+                </section>
+                <section>
+                    <section>
+                        <h1>
+                            What's wrong with just building
+                            <font color="#00ccff">
+                                web apps
+                            </font>
+                            , anyway?
+                        </h1>
+                    </section>
+                    <section>
+                        <h2>
+                            <font color="#00ccff">
+                                Absolutely nothing
+                            </font>
+                        </h2>
+                        <div>
+                            Please do.
+                        </div>
+                        <div>
+                            <img src="images/extreme_spit_take.gif" width="500">
+                            <br>
+                        </div>
+                        <div>
+                            Did you expect a different answer?
+                        </div>
+                        <div>
+                            <br>
+                        </div>
+                    </section>
+                    <section>
+                        <h2>
+                            Some reasons why you might want to build a hybrid&nbsp;
+                            <font color="#00ccff">
+                                "native"
+                            </font>
+                            App instead
+                        </h2>
+                        <div>
+                            <p>
+                            </p>
+                            <ol>
+                                <li>
+                                    Access to device features
+                                </li>
+                                <ul>
+                                    <li>
+                                        the camera
+                                    </li>
+                                    <li>
+                                        geolocation
+                                    </li>
+                                    <li>
+                                        filesystem
+                                    </li>
+                                    <li>
+                                        contacts
+                                    </li>
+                                    <li>
+                                        accelerometer, etc
+                                    </li>
+                                </ul>
+                                <li>
+                                    App store / Google Play ecosystem
+                                </li>
+                                <li>
+                                    App store / Google Play discoverability
+                                </li>
+                            </ol>
+                            <p>
+                            </p>
+                        </div>
+                    </section>
+                </section>
+                <section>
+                    <h2>
+                        What
+                        <font color="#00ccff">
+                            APIs
+                        </font>
+                        are available?
+                    </h2>
+                    <div>
+                        <img src="images/PhoneGap-APIs.png" style="width: 66.0%;">
+                        <br>
+                    </div>
+                </section>
+                <section>
+                    <h1>
+                        DO I
+                        <font color="#00ccff">
+                            NEED
+                        </font>
+                        TO KNOW&nbsp;
+                    </h1>
+                    <h2>
+                        OBJECTIVE-C / JAVA / ETC?
+                    </h2>
+                    <div>
+                        <br>
+                    </div>
+                    <div>
+                        No. That's kinda the point.
+                    </div>
+                </section>
+                <section>
+                    <section>
+                        <h1>
+                            Getting
+                            <font color="#00ccff">
+                                started
+                            </font>
+                        </h1>
+                        <div style="font-size: 50.0%;line-height: 20.0px;">
+                            (finally...)
+                        </div>
+                        <div style="font-size: 50.0%;line-height: 20.0px;">
+                            <br>
+                        </div>
+                        <div>
+                            <a href="http://www.phonegap.com">http://www.phonegap.com</a>
+                        </div>
+                        <div>
+                            <br>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>
+                                    Download PhoneGap/Cordova
+                                    <br>
+                                </li>
+                                <li>
+                                    Set up your dev environment
+                                </li>
+                                <li>
+                                    ???? *
+                                </li>
+                                <li>
+                                    Profit!
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <br>
+                        </div>
+                        <div style="font-size: 50.0%;line-height: 20.0px;">
+                            * Sadly as with all app development, this step usually involves a lot
+                            of&nbsp;
+                        </div>
+                        <div style="font-size: 50.0%;line-height: 20.0px;">
+                            development, debugging, testing...
+                        </div>
+                        <div style="font-size: 50.0%;line-height: 20.0px;">
+                            and (in most cases) finally dealing with the Apple App Store review process.
+                            I am so sorry.
+                        </div>
+                    </section>
+                    <section>
+                        <h2>
+                            <font color="#00ccff">
+                                Command line
+                            </font>
+                            tooling
+                        </h2>
+                        <div>
+                            <br>
+                            <small>
+                                for creation:
+                            </small>
+                        </div>
+                        <div>
+                            <font face="courier new">
+                                <b>
+                                    ./bin/create
+                                </b>
+                            </font>
+                        </div>
+                        <div>
+                            <br>
+                            <small>
+                                then... for building/running/debugging:
+                            </small>
+                        </div>
+                        <div>
+                            <font face="courier new">
+                                <b>
+                                    ./cordova/debug
+                                </b>
+                            </font>
+                        </div>
+                        <div>
+                            <b>
+                                <br>
+                            </b>
+                        </div>
+                        <div>
+                            <font face="courier new">
+                                <b>
+                                    ./cordova/emulate
+                                </b>
+                            </font>
+                        </div>
+                        <div>
+                            <b>
+                                <br>
+                            </b>
+                        </div>
+                        <div>
+                            <b>
+                                <font face="courier new">
+                                    ./cordova/BOOM
+                                </font>
+                                *
+                            </b>
+                        </div>
+                        <div style="font-size: 50.0%;line-height: 20.0px;">
+                            * Yes that is
+                            <b>
+                                actually
+                            </b>
+                            a thing (just for Android though, for some reason).
+                        </div>
+                    </section>
+                    <section>
+                        <h1>
+                            The
+                            <font color="#00ccff">
+                                www
+                            </font>
+                            folder
+                        </h1>
+                        <div>
+                            <br>
+                        </div>
+                        <div>
+                            This is where all of your HTML, JavaScript and CSS assets live.
+                        </div>
+                        <div>
+                            <br>
+                        </div>
+                        <div>
+                            <br>
+                        </div>
+                        <div>
+                            Most PhoneGap apps are of the "
+                            <font color="#00ccff">
+                                single page application
+                            </font>
+                            " type, meaning there is just an
+                            <font color="#00ccff">
+                                index.html
+                            </font>
+                            and all the magic happens there.
+                        </div>
+                        <div>
+                            <br>
+                        </div>
+                        <div>
+                            <br>
+                        </div>
+                    </section>
+                    <section>
+                        <h1>
+                            cordova.js
+                        </h1>
+                        <div>
+                            <br>
+                        </div>
+                        <h3>
+                            <font color="#00ccff">
+                                Platform specific
+                            </font>
+                            * JavaScript file that provides access to the PhoneGap APIs
+                        </h3>
+                        <div>
+                            <img src="images/Cordova-js.png">
+                        </div>
+                        <div>
+                            Make sure you are using the correct cordova.js for the correct platform.
+                        </div>
+                        <div>
+                            <br>
+                        </div>
+                        <div style="font-size: 50.0%;line-height: 20.0px;">
+                            * Unless you are using PhoneGap Build, we'll get to that...
+                        </div>
+                    </section>
+                    <section>
+                        <h1>
+                            <font color="#00ccff">
+                                Device Ready
+                            </font>
+                        </h1>
+                        <div>
+                            This event tells you that PhoneGap has finished loading and the APIs (and
+                            any plug-ins) are ready to be called.
+                        </div>
+                        <div>
+                            <br>
+                        </div>
+                        <div>
+                            <img src="images/Device-Ready.png">
+                        </div>
+                        <div>
+                            &nbsp;
+                        </div>
+                        <div>
+                            This is
+                            <b>
+                                NOT
+                            </b>
+                            the same as the
+                            <i>
+                                load
+                            </i>
+                            event or jQuery's
+                            <i>
+                                $(document).ready()
+                            </i>
+                        </div>
+                    </section>
+                    <section>
+                        <h1>
+                            <font color="#00ccff">
+                                Demo
+                            </font>
+                        </h1>
+                    </section>
+                </section>
+                <section>
+                    <h2>
+                        DO I NEED TO SET UP A DEV ENVIRONMENT FOR
+                        <font color="#00ccff">
+                            EACH PLATFORM
+                        </font>
+                        ?
+                    </h2>
+                    <div>
+                        <br>
+                    </div>
+                    <div>
+                        Yes.
+                    </div>
+                    <div>
+                        <br>
+                    </div>
+                    <div>
+                        Well, unless you use PhoneGap Build.*
+                    </div>
+                    <div>
+                        <br>
+                    </div>
+                    <div style="font-size: 50.0%;line-height: 20.0px;">
+                        <br>
+                    </div>
+                    <div style="font-size: 50.0%;line-height: 20.0px;">
+                        <br>
+                    </div>
+                    <div style="font-size: 50.0%;line-height: 20.0px;">
+                        * We'll get to that in a minute...
+                    </div>
+                </section>
+                <section>
+                    <h1>
+                        Will
+                        <font color="#00ccff">
+                            my app
+                        </font>
+                        look like a
+                        <font color="#00ccff">
+                            native
+                        </font>
+                        app?
+                    </h1>
+                    <div>
+                        <br>
+                    </div>
+                    <div>
+                        That depends...
+                    </div>
+                    <div>
+                        <br>
+                    </div>
+                    <h2>
+                        PhoneGap is
+                        <font color="#00ccff">
+                            UI Agnostic
+                        </font>
+                    </h2>
+                </section>
+                <section>
+                    <h2>
+                        UI Frameworks
+                    </h2>
+                    <div>
+                        <br>
+                    </div>
+                    <div>
+                        Good
+                    </div>
+                    <div>
+                        <ol>
+                            <li>
+                                jQTouch -
+                                <a href="https://github.com/Senchalabs/jQTouch">https://github.com/Senchalabs/jQTouch</a>
+                            </li>
+                            <li>
+                                KendoUI&nbsp;(commercial)&nbsp;-
+                                <a href="http://www.kendoui.com">http://www.kendoui.com</a>
+                            </li>
+                            <li>
+                                App-UI -&nbsp;
+                                <a href="http://triceam.github.com/app-UI/">http://triceam.github.com/app-UI</a>
+                            </li>
+                            <li>
+                                Bootstrap -&nbsp;
+                                <a href="http://twitter.github.com/bootstrap/">http://twitter.github.com/bootstrap</a>
+                            </li>
+                        </ol>
+                    </div>
+                    <div>
+                        <br>
+                    </div>
+                    <div>
+                        Bad
+                    </div>
+                    <div>
+                        <ol>
+                            <li>
+                                jQuery Mobile -&nbsp;
+                                <a href="http://jquerymobile.com">http://jquerymobile.com</a>
+                                &nbsp;(
+                                <a href="http://bit.ly/nojQM">please don't</a>
+                                &nbsp;&nbsp;)
+                            </li>
+                        </ol>
+                    </div>
+                </section>
+                <section>
+                    <section>
+                        <h2>
+                            Other
+                            <font color="#00ccff">
+                                development tools
+                            </font>
+                        </h2>
+                        <h3>
+                            Emulate:
+                            <br>
+                        </h3>
+                        <div>
+                            <a href="http://emulate.phonegap.com">http://emulate.phonegap.com</a>
+                        </div>
+                        <div>
+                            Ripple emulator -
+                            <a href="https://chrome.google.com/webstore/detail/ripple-emulator-beta/geelfhphabnejjhdalkjhgipohgpdnoc">Chrome Webstore</a>
+                        </div>
+                        <div>
+                            <br>
+                        </div>
+                        <h3>
+                            Debug:
+                            <br>
+                        </h3>
+                        <div>
+                            Weinre -
+                            <a href="http://debug.phonegap.com">http://debug.phonegap.com</a>
+                        </div>
+                        <div>
+                            <br>
+                        </div>
+                    </section>
+                    <section>
+                        <h1>
+                            <font color="#00ccff">
+                                Ripple
+                            </font>
+                            Emulator
+                        </h1>
+                        <div>
+                            <img src="images/Ripple-Bot.png" width="400">
+                            <br>
+                        </div>
+                    </section>
+                    <section>
+                        <h1>
+                            <font color="#00ccff">
+                                Demo
+                            </font>
+                        </h1>
+                    </section>
+                    <section>
+                        <h2>
+                            <font color="#00ccff">
+                                WEINRE
+                            </font>
+                        </h2>
+                        <div>
+                            Hosted webkit remote inspector, kinda...
+                        </div>
+                        <div>
+                            <a href="https://github.com/apache/incubator-cordova-weinre">https://github.com/apache/incubator-cordova-weinre</a>
+                            <br>
+                        </div>
+                        <div>
+                            <img src="images/weinre-demo.jpg" width="600">
+                            <br>
+                        </div>
+                    </section>
+                    <section>
+                        <h1>
+                            <font color="#00ccff">
+                                Demo
+                            </font>
+                        </h1>
+                    </section>
+                </section>
+                <section>
+                    <h1>
+                        <font color="#00ccff">
+                            PhoneGap Build
+                        </font>
+                    </h1>
+                    <div>
+                        <a href="http://build.phonegap.com">http://build.phonegap.com</a>
+                    </div>
+                    <div>
+                        <br>
+                    </div>
+                    <div>
+                        <div style="font-size: 80.0%;">
+                            <ul>
+                                <li>
+                                    IOS, Android, BlackBerry, WebOS, Windows Phone and Symbian
+                                </li>
+                                <li>
+                                    FREE and for one private project
+                                </li>
+                                <li>
+                                    Will always be free for Open Source projects
+                                </li>
+                                <li>
+                                    Choose to upload your files (zip) or provide a Github repository
+                                </li>
+                                <li>
+                                    Supports a few plugins (ChildBrowser, Barcode Scanner, Analytics)
+                                </li>
+                            </ul>
+                        </div>
+                        <br>
+                    </div>
+                    <div style="font-size: 50.0%;line-height: 20.0px;">
+                        Told you we would get to it...
+                    </div>
+                </section>
+                <section>
+                    <h2>
+                        A
+                        <font color="#00ccff">
+                            cloud
+                        </font>
+                        build service
+                    </h2>
+                    <div>
+                        <img src="images/Build-Diagram-3.png" style="background-color: rgb(204,204,204);"
+                        width="700">
+                        <br>
+                    </div>
+                </section>
+                <section>
+                    <h2>
+                        <font color="#00ccff">
+                            Summary
+                        </font>
+                    </h2>
+                    <div>
+                        <p style="margin-bottom: 0.0cm;">
+                            <b>
+                                Adobe PhoneGap Build
+                            </b>
+                            is a service that allows you to create mobile apps using standard web
+                            technologies (HTML, CSS, JavaScript), and then easily compile them for
+                            <b>
+                                multiple platforms
+                            </b>
+                            in the cloud.
+                        </p>
+                        <p style="margin-bottom: 0.0cm;">
+                            <br>
+                        </p>
+                        <p style="margin-bottom: 0.0cm;">
+                        </p>
+                        <p style="margin-bottom: 0.0cm;">
+                            Get app-store ready apps without the headache of maintaining native SDKs
+                        </p>
+                        <p style="margin-bottom: 0.0cm;">
+                            <br>
+                        </p>
+                        <p style="margin-bottom: 0.0cm;">
+                        </p>
+                        <p style="margin-bottom: 0.0cm;">
+                            RESTful API framework
+                        </p>
+                    </div>
+                </section>
+                <section>
+                    <h1>
+                        <font color="#00ccff">
+                            Features
+                        </font>
+                    </h1>
+                    <div>
+                        <br>
+                    </div>
+                    <div>
+                        <p style="margin-bottom: 0.0cm;">
+                            Install Apps Directly - via QR code
+                        </p>
+                        <p style="margin-bottom: 0.0cm;">
+                            <b>
+                                <br>
+                            </b>
+                        </p>
+                        <p style="margin-bottom: 0.0cm;">
+                            Collaborate -&nbsp;When your app is ready, just send a link.
+                        </p>
+                        <p style="margin-bottom: 0.0cm;">
+                            <br>
+                        </p>
+                        <p style="margin-bottom: 0.0cm;">
+                            Roles - developers and testers
+                        </p>
+                        <p style="margin-bottom: 0.0cm;">
+                            <br>
+                        </p>
+                        <p style="margin-bottom: 0.0cm;">
+                            WEINRE integration&nbsp;
+                        </p>
+                    </div>
+                </section>
+                <section>
+                    <h1>
+                        PhoneGap Build &amp;
+                        <font color="#00ccff">
+                            plug-ins
+                        </font>
+                    </h1>
+                    <div>
+                        Adobe PhoneGap Build supports a curated selection of PhoneGap Plugins
+                        <br>
+                    </div>
+                    <div>
+                        <br>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                ChildBrowser (in app browser)
+                            </li>
+                            <li>
+                                Barcode Scanner
+                            </li>
+                            <li>
+                                Google Analytics
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section>
+                    <h1>
+                        <font color="#00ccff">
+                            config.xml
+                        </font>
+                    </h1>
+                    <div>
+                        <img src="images/Config-xml.png" width="550">
+                        <br>
+                    </div>
+                </section>
+                <section>
+                    <h1>
+                        <font color="#00ccff">
+                            Thanks
+                        </font>
+                    </h1>
+                    <div>
+                        <br>
+                    </div>
+                    <div>
+                        Feel free to ask me any PhoneGap questions you may have as long as they
+                        have nothing to do with jQuery Mobile.
+                    </div>
+                    <div>
+                        <br>
+                    </div>
+                    <div>
+                        Just kidding. *
+                    </div>
+                    <div>
+                        <br>
+                    </div>
+                    <div>
+                        <br>
+                    </div>
+                    <div style="font-size: 50.0%;line-height: 20.0px;">
+                        * I'm totally not kidding.
+                    </div>
+                </section>
+            </div>
+        </div>
+        <script src="lib/js/head.min.js">
+                        
+        </script>
+        <script src="js/reveal.min.js">
+                        
+        </script>
+        <script>
+                                    // Full list of configuration options available here:
+                             // https://github.com/hakimel/reveal.js#configuration
+                            Reveal.initialize({
+                                controls: true,
+                                progress: true,
+                                history: true,
+                                center: true,
+
+                                theme: Reveal.getQueryHash().theme,
+                                // available themes are in /css/theme
+                                transition: Reveal.getQueryHash().transition || 'default',
+                                // default/cube/page/concave/zoom/linear/none
+                                // Optional libraries used to extend on reveal.js
+                                dependencies: [{
+                                    src: 'lib/js/classList.js',
+                                    condition: function() {
+                                        return !document.body.classList;
+                                    }
+                                }, {
+                                    src: 'plugin/markdown/showdown.js',
+                                    condition: function() {
+                                        return !!document.querySelector('[data-markdown]');
+                                    }
+                                }, {
+                                    src: 'plugin/markdown/markdown.js',
+                                    condition: function() {
+                                        return !!document.querySelector('[data-markdown]');
+                                    }
+                                }, {
+                                    src: 'plugin/highlight/highlight.js',
+                                    async: true,
+                                    callback: function() {
+                                        hljs.initHighlightingOnLoad();
+                                    }
+                                }, {
+                                    src: 'plugin/zoom-js/zoom.js',
+                                    async: true,
+                                    condition: function() {
+                                        return !!document.body.classList;
+                                    }
+                                }, {
+                                    src: 'plugin/notes/notes.js',
+                                    async: true,
+                                    condition: function() {
+                                        return !!document.body.classList;
+                                    }
+                                }
+                                // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+                                ]
+                            });
+        </script>
+    </body>
+
+</html>
