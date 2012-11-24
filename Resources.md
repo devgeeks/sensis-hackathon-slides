@@ -25,4 +25,11 @@
 
 [jQTouch](https://github.com/Senchalabs/jQTouch)  
 [KendoUI Mobile](http://kendoui.com)  
-[App-UI](http://triceam.github.com/app-UI)  
+[App-UI](http://triceam.github.com/app-UI) 
+
+### Good articles
+
+[PhoneGap visually explained](http://phonegap.com/2012/05/02/phonegap-explained-visually/)  
+[Building WebView Applications](http://maxogden.com/building-webview-applications.html)  
+[Fast WebView Applications](http://maxogden.com/fast-webview-applications.html)  
+
